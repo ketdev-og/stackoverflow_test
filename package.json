@@ -1,0 +1,21 @@
+{
+  "name": "bixbase_task",
+  "version": "0.0.1",
+  "description": "backend for bixbase task/attendance app",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "ketem",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "http-errors": "^2.0.0",
+    "mongoose": "^6.2.9",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
+    "validator": "^13.7.0"
+  }
+}

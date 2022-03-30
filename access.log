@@ -1,0 +1,2 @@
+::ffff:127.0.0.1 - - [30/Mar/2022:04:27:20 +0000] "GET / HTTP/1.1" 200 17 "-" "vscode-restclient"
+::ffff:127.0.0.1 - - [30/Mar/2022:04:28:12 +0000] "POST /v1/auth/login HTTP/1.1" 200 11 "-" "vscode-restclient"
