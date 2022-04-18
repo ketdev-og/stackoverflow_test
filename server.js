@@ -1,19 +1,29 @@
 const express = require("express");
+require('./helper/init_mongo')
+require('./helper/init_redis')
+
 const createError = require("http-errors");
 const morgan = require("morgan");
 const fs = require('fs');
 const path = require('path')
 require('dotenv').config()
 const AuthRoute = require('./api/v1/Auth');
-
+const { verifyAccessToken } = require("./helper/jwt");
+const { log } = require("console");
 
 
 const app = express();
+app.use(express.json())
+app.use(express.urlencoded({extended:true}))
+
 
 var accessLog = fs.createWriteStream(path.join(__dirname, 'access.log'),{flags:'a'});
 app.use(morgan('combined', {stream:accessLog}));
 
-app.get('/', async(req,res,next)=>{
+
+
+app.get('/', verifyAccessToken, async(req,res,next)=>{
+    console.log(req.payload);
     res.send('v1 api successful')
 })
 

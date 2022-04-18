@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
+const bcrypt = require('bcrypt')
 const Schema = mongoose.Schema
-const validate = require('validator');
+
 const { default: isMobilePhone } = require("validator/lib/isMobilePhone");
 const { default: isEmail } = require("validator/lib/isEmail");
-const { options } = require("nodemon/lib/config");
+
 
 
 const UserSchema = new Schema({
@@ -38,9 +39,25 @@ const UserSchema = new Schema({
         required:true,
         min:8
     }
-
-
-
-
-
 })
+
+UserSchema.pre('save', async function(next){
+    try {
+        const salt = await bcrypt.genSalt(10)
+        const hashPass = await bcrypt.hash(this.password, salt)
+        this.password = hashPass
+        next()
+    } catch (error) {
+        next(error)
+    }
+})
+
+UserSchema.methods.isValidPassword = async function (password){
+    try {
+       return await bcrypt.compare(password, this.password)
+    } catch (error) {
+        throw error
+    }
+}
+
+module.exports = mongoose.model('User', UserSchema)
