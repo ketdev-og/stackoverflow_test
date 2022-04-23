@@ -38,7 +38,20 @@ const UserSchema = new Schema({
         type:String,
         required:true,
         min:8
+    },
+    roles:{
+        type:Array
+    },
+    tasks:{
+        pending:{ type:Array},
+        inProcess:{ type:Array},
+        completed:{ type:Array}
+    },
+    isAdmin:{
+        type:Boolean,
+        default:false
     }
+
 })
 
 UserSchema.pre('save', async function(next){

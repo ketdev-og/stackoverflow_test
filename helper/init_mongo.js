@@ -4,6 +4,8 @@ const { default: mongoose } = require("mongoose");
 const dbconfig = config.get("MONGO_DB.local");
 const dbname = config.get("MONGO_DB.db_name")
 
+
+//mongodb init connection
 mongoose
   .connect(dbconfig, {
     dbName:dbname,

@@ -1,12 +1,12 @@
 {
     "MONGO_DB":{
-        "url":"mongodb://ketem:e40zngkSULUDEX8Y@cluster0.eraq8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+        "url":"mongodb://xxxx:xxxxxx@cluster0.eraq8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
         "local":"mongodb://localhost:27017",
-       "db_name":"bixbase_task_auth"
+       "db_name":"xxxxx_task_auth"
     },
     
     "JWT":{
-        "access_token":"e4ddcdbaeadc39783364236d33b70d4e43b8218847b5f1948efe975057599515",
-        "refresh_token":"3697ba505a5ea453690bf802c1f37238ff8421407824329339d6addbae6a6c2b"
+        "access_token":"e4ddcdbawefearthrtthrdc39783364rrkkrkrk70erd4e43b821gshrt8847bjmj5f1948eferthrrrhm975057599515",
+        "refresh_token":"3697ba505rhrthra5earfhnrterhherhe0bf802c1f3v7238ffgrff8421407824329wegtyjukuuk339d6addbae6a6c2b"
     }
 }

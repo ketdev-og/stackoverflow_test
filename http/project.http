@@ -1,0 +1,58 @@
+### project
+POST http://localhost:3000/v1/project/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTA3MzEwMTAsImV4cCI6MTY1MDczNDYxMCwiYXVkIjoiNjI2MTU0ZjM4ZjRlNzUwOGI0YzNmOGU0IiwiaXNzIjoiYml4YmFzZS5jb20ifQ.uvufXN2SxTvSOgzr6p2BARTtKT70-u4uz0KWCQhg-Ws
+Content-Type: application/json
+
+{
+    "title":"eklekrler",
+    "descriptions":"ketem one",
+    "dates":{
+        "issueDate":"24/04/14",
+        "completeionDate":"26/06/2020"
+    },
+    "isCompleted":true,
+    "lead_id":"weytf87834734nnf3fn47"
+}
+
+### project
+POST http://localhost:3000/v1/project/get
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTA2OTA3MDUsImV4cCI6MTY1MDY5NDMwNSwiYXVkIjoiNjI2MTU0ZjM4ZjRlNzUwOGI0YzNmOGU0IiwiaXNzIjoiYml4YmFzZS5jb20ifQ.yyoNYwO1RsF700ICZM3MLQUWtOXzMbb2x7BewDRIWK8
+Content-Type: application/json
+
+{
+    "id":"62638d6123028b7c000b4383"
+}
+
+### project
+POST http://localhost:3000/v1/project/get_projects
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTA2OTQ2NTQsImV4cCI6MTY1MDY5ODI1NCwiYXVkIjoiNjI2MTU0ZjM4ZjRlNzUwOGI0YzNmOGU0IiwiaXNzIjoiYml4YmFzZS5jb20ifQ.ZACWJGiLjpLHbUmDtD58vlqd5CgteM-fqNW4KmnysE4
+
+
+
+### project
+POST http://localhost:3000/v1/project/update
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTA2OTQ2NTQsImV4cCI6MTY1MDY5ODI1NCwiYXVkIjoiNjI2MTU0ZjM4ZjRlNzUwOGI0YzNmOGU0IiwiaXNzIjoiYml4YmFzZS5jb20ifQ.ZACWJGiLjpLHbUmDtD58vlqd5CgteM-fqNW4KmnysE4
+Content-Type: application/json
+
+{
+    "dates": {
+      "issueDate": "56777",
+      "completeionDate": "26/06/2020"
+    },
+    "id": "62638d6123028b7c000b4383",
+    "title": "bolu",
+    "descriptions": "ketem og",
+    "isCompleted": "false",
+    "lead":"weytf87834734nnf3fn47"
+}
+
+
+
+### project
+POST http://localhost:3000/v1/project/delete
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTA2OTQ2NTQsImV4cCI6MTY1MDY5ODI1NCwiYXVkIjoiNjI2MTU0ZjM4ZjRlNzUwOGI0YzNmOGU0IiwiaXNzIjoiYml4YmFzZS5jb20ifQ.ZACWJGiLjpLHbUmDtD58vlqd5CgteM-fqNW4KmnysE4
+Content-Type: application/json
+
+{
+    "id":"62638d6123028b7c000b4383"
+}

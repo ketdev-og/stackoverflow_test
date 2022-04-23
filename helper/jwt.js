@@ -5,7 +5,11 @@ const accessKey = config.get("JWT.access_token");
 const refreshKey = config.get("JWT.refresh_token");
 const client = require("../helper/init_redis");
 
+
+//Json Web Token 
 module.exports = {
+
+// Create Access Token
   signAccessToken: (userId) => {
     return new Promise((resolve, reject) => {
       const payload = {};
@@ -26,6 +30,8 @@ module.exports = {
     });
   },
 
+
+  //verify accesstoken
   verifyAccessToken: (req, res, next) => {
     if (!req.headers["authorization"]) return next(createError.Unauthorized);
     const authHeader = req.headers["authorization"];
@@ -44,6 +50,8 @@ module.exports = {
     });
   },
 
+
+  //create refresh token
   signRefreshToken: (userId) => {
     return new Promise((resolve, reject) => {
       const payload = {};
@@ -73,6 +81,8 @@ module.exports = {
     });
   },
 
+
+  //verify refresh token - employ the use of redis to cache refresh token 
   verifyRefreshToken: (refreshToken) => {
     return new Promise((resolve, reject) => {
       jsonwebtoken.verify(refreshToken, refreshKey, (err, payload) => {
