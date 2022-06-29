@@ -1,15 +1,15 @@
 # stackoverflow_test
 
 
-# this test contains fout apis
+# THIS PROJECT CONTAINS FOUR ENDPOINTS:-
 
-1. to get stack questions
+1. to get stack questions   :   GET   http://localhost:3000/v1/stack/question
 
-2. to save stack questions
+2. to save stack questions  :   POST  http://localhost:3000/v1/stack/question
 
-3. to save stack answers
+3. to save stack answers:   :   POST  http://localhost:3000/v1/stack/answer
 
-4. to save stack comments
+4. to save stack comments   :   POST  http://localhost:3000/v1/stack/comment
 
 
 # TOOLS USED
