@@ -1,5 +1,6 @@
 const config = require("config");
 const { default: mongoose } = require("mongoose");
+const { loadRedis } = require("./autoload_data");
 
 const dbconfig = config.get("MONGO_DB.local");
 const dbname = config.get("MONGO_DB.db_name")
@@ -12,6 +13,7 @@ mongoose
   })
   .then(() => {
     console.log("mongoDb connected");
+    loadRedis("questions")
   })
   .catch((err) => {
     console.log(err.message);

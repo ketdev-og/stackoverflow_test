@@ -2,11 +2,7 @@
     "MONGO_DB":{
         "url":"mongodb://xxxx:xxxxxx@cluster0.eraq8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
         "local":"mongodb://localhost:27017",
-       "db_name":"xxxxx_task_auth"
-    },
-    
-    "JWT":{
-        "access_token":"e4ddcdbawefearthrtthrdc39783364rrkkrkrk70erd4e43b821gshrt8847bjmj5f1948eferthrrrhm975057599515",
-        "refresh_token":"3697ba505rhrthra5earfhnrterhherhe0bf802c1f3v7238ffgrff8421407824329wegtyjukuuk339d6addbae6a6c2b"
+        "db_name":"stack"
     }
+ 
 }

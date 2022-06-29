@@ -1,0 +1,34 @@
+### question
+POST http://localhost:3000/v1/stack/question
+Content-Type: application/json
+
+{
+    "title":"123456789",
+    "descriptions":"ketem one"
+}
+
+### question
+GET http://localhost:3000/v1/stack/question
+
+
+
+### answer
+POST http://localhost:3000/v1/stack/answer
+Content-Type: application/json
+
+{
+    "question_id":"62baef6571340771ddd69e4e",
+    "descriptions":"ketem one"
+}
+
+
+### comment
+POST http://localhost:3000/v1/stack/comment
+Content-Type: application/json
+
+{
+    "request_id":"62baef6571340771ddd69e4e",
+    "descriptions":"ketem one"
+}
+
+
