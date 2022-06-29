@@ -3,16 +3,16 @@
 
 # this test contains fout apis
 
-1.  to get stack questions
+1. to get stack questions
 
-2.  to save stack questions
+2. to save stack questions
 
-3.  to save stack answers
+3. to save stack answers
 
-4.  to save stack comments
+4. to save stack comments
 
 
-#TOOLS USED
+# TOOLS USED
 
 Nodejs
 
@@ -25,6 +25,6 @@ Mongooes
 Redis 
 
 
-#INFORMATIONS
+# INFORMATIONS
 
 update config/default.json with mongo db url. Get started by running npm install in console
