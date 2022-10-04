@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-04T13:07:29.277Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="WpaRW47MZSR_S_ZLhFxo" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-04T13:22:14.981Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="L1T5PGj7XCx99hEw6slL" version="20.3.0" type="github">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
     <mxGraphModel dx="2473" dy="2207" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -2196,6 +2196,27 @@
         </mxCell>
         <mxCell id="kEKf6R01L94eBU58evI_-225" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=8;fillColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="-129" y="-972.61" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kEKf6R01L94eBU58evI_-226" value="" style="endArrow=none;html=1;rounded=0;fontSize=8;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="-870" as="sourcePoint" />
+            <mxPoint x="480" y="-870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kEKf6R01L94eBU58evI_-227" value="" style="endArrow=classic;html=1;rounded=0;fontSize=8;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="419.94" y="-870.74" as="sourcePoint" />
+            <mxPoint x="420" y="-750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kEKf6R01L94eBU58evI_-228" value="GET" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=8;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="401" y="-703.5" width="31" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="kEKf6R01L94eBU58evI_-229" value="StoreProduct&lt;br&gt;by&lt;br&gt;Category" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="386.5" y="-740" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kEKf6R01L94eBU58evI_-230" value="CATEGORY&lt;br&gt;ID" style="ellipse;whiteSpace=wrap;html=1;fontSize=7;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="394" y="-825" width="47" height="32.25" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
